@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Aula 15</title>
+    <style>
+        span{
+            color: red;
+        }
+        #divsimples{
+            background-color: cornflowerblue;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .divtratada{
+            display: inline-block;
+            background-color:rgb(62, 185, 83);
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+
+        }
+        .divtratada:hover > p {
+            background-color: rgba(0, 195, 255, 0.61);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="divsimples"><div>01</div></h1>
+    <h1 class="divtratada"><div id="divsimples">02</div></h1>
+    <h1 class="divtratada"><div>03</div></h1>
+    <h1 id="divsimples"><div>04</div></h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, <span class="lorem">adipisicing elit. 
+    Voluptatem, aspernatur. Quas nesciunt laborum, officia ex exercitationem nobis numquam voluptate in deserunt.</span> Enim eum minima tempora accusamus libero sapiente, id ipsam?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<divsimples class="divtratada">
+        Nulla doloremque natus modi omnis quo dolorem non quis atque eaque asperiores, cupiditate voluptatum dolores tempore blanditiis sequi molestiae maxime est enim.</divsimples></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illum non saepe nisi tempore nobis minima nam!<divsimples class="divtratada">
+        Dolor similique nisi, harum ipsa labore, doloremque iste ducimus omnis quia mollitia excepturi!</divtratada></p>
+    
+</body>
+</html>
