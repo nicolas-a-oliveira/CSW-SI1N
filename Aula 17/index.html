@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+
+
+
+</style>
+<body>
+    <div>
+        <h1> Formulário de contato</h1>
+
+
+    </div>
+    <section class="formulario">
+
+ 
+        <form action="mailto:nicolasalmeida@gmail.com" method="post">
+            <span>Nome:</span> 
+            <input type="text">
+            <span>Email</span> 
+            <input type="text">
+            <span>Telefone</span>
+            <input type="tel">
+            <span>Comentário</span>
+            <textarea name="comentario" id="comentario" rows="10" cols="50"></textarea>
+            <br>
+            <span>Data Nascimento</span>
+            <input type="date" name="data">
+            <span>Visita</span>
+            <input type="time" name="time">
+            <span>Deseja receber contato?</span>
+            <input type="radio" name="contato" id="contatosim" value="Sim"> Sim
+            <input type="radio" name="contato" id="contatosim" value="Não"> Não
+            <br>
+            <span>Assunto a receber</span>
+            <input type="checkbox" name="checkbox" id="checkbox" value="Auto"> Automóvel
+            <input type="checkbox" name="checkbox" id="checkbox2" value="negocio"> Negócios
+            <input type="checkbox" name="checkbox" id="checkbox3" value="esporte"> Esporte
+            <br>
+            <span>O que mais gostou?</span>
+            <select name="selecionar" id="selecionar">
+                <option value="GVitoria"> Grande Vitória</option>
+                <option value="Vv"> Vila Velha</option>
+                <option value="Guarapa"> Guarapari</option>
+            </select>
+
+            <div class="botoes">
+                <input type="submit" id="enviar" value="enviar">
+                <input type="reset" id="limpar" value="limpar">   
+                <button>Voltar</button>
+            
+            </div>
+        </form>
+    </section>
+</body>
+</html>
